@@ -1,10 +1,15 @@
 {
-  "name": "create-typescript-app",
+  "name": "@gokoro/create-typescript-app",
   "version": "0.0.1",
+  "bin": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "ts-node index.ts",
     "build": "ncc build index.ts -o dist --minify --no-cache",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "publish": "yarn build && yarn npm publish --access public --tolerate-republish"
   },
   "devDependencies": {
     "@swc/core": "^1.2.80",

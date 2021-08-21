@@ -9,11 +9,11 @@
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true, // this only
+    "resolveJsonModule": true,
     "types": ["node"]
   },
   "include": ["**/*.ts"],
-  "exclude": ["templates/**/*"],
+  "exclude": ["templates/**/*", "dist"],
   "ts-node": {
     "transpileOnly": true,
     "transpiler": "ts-node/transpilers/swc-experimental"

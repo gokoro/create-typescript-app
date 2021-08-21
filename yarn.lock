@@ -65,6 +65,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gokoro/create-typescript-app@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@gokoro/create-typescript-app@workspace:."
+  dependencies:
+    "@swc/core": ^1.2.80
+    "@types/cross-spawn": ^6.0.2
+    "@types/mkdirp": ^1
+    "@types/node": ^16.7.1
+    "@typescript-eslint/eslint-plugin": ^4.29.2
+    "@typescript-eslint/parser": ^4.29.2
+    "@vercel/ncc": ^0.29.2
+    chalk: ^4.1.2
+    commander: ^8.1.0
+    cpy: ^8.1.2
+    cross-spawn: ^7.0.3
+    eslint: ^7.32.0
+    eslint-config-airbnb-base: ^14.2.1
+    eslint-import-resolver-node: ^0.3.6
+    eslint-plugin-import: ^2.24.1
+    mkdirp: ^1.0.4
+    ts-node: ^10.2.1
+    typescript: ^4.3.5
+  bin:
+    create-typescript-app: dist/index.js
+  languageName: unknown
+  linkType: soft
+
 "@humanwhocodes/config-array@npm:^0.5.0":
   version: 0.5.0
   resolution: "@humanwhocodes/config-array@npm:0.5.0"
@@ -1061,31 +1088,6 @@ __metadata:
   checksum: a9a1503d4390d8b59ad86f4607de7870b39cad43d929813599a23714831e81c520bddf61bcdd1f8e30f05fd3a2b71ae8538e946eb2786dc65c2bbc520f692eff
   languageName: node
   linkType: hard
-
-"create-typescript-app@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "create-typescript-app@workspace:."
-  dependencies:
-    "@swc/core": ^1.2.80
-    "@types/cross-spawn": ^6.0.2
-    "@types/mkdirp": ^1
-    "@types/node": ^16.7.1
-    "@typescript-eslint/eslint-plugin": ^4.29.2
-    "@typescript-eslint/parser": ^4.29.2
-    "@vercel/ncc": ^0.29.2
-    chalk: ^4.1.2
-    commander: ^8.1.0
-    cpy: ^8.1.2
-    cross-spawn: ^7.0.3
-    eslint: ^7.32.0
-    eslint-config-airbnb-base: ^14.2.1
-    eslint-import-resolver-node: ^0.3.6
-    eslint-plugin-import: ^2.24.1
-    mkdirp: ^1.0.4
-    ts-node: ^10.2.1
-    typescript: ^4.3.5
-  languageName: unknown
-  linkType: soft
 
 "cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
