@@ -54,7 +54,6 @@ async function createApp(installPath: string): Promise<void> {
     'eslint',
     'eslint-config-airbnb-base',
     'eslint-import-resolver-node',
-    'eslint-import-resolver-node',
     'eslint-plugin-import',
     'ts-node',
     'typescript',
