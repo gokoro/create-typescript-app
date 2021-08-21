@@ -1,0 +1,27 @@
+{
+  "name": "create-typescript-app",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "ncc build index.ts -o dist --minify --no-cache",
+    "lint": "eslint . --ext .ts"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.77",
+    "@types/cross-spawn": "^6.0.2",
+    "@types/mkdirp": "^1",
+    "@types/node": "^16.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "@vercel/ncc": "^0.29.2",
+    "commander": "^8.1.0",
+    "cross-spawn": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-plugin-import": "^2.22.1",
+    "mkdirp": "^1.0.4",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  }
+}
