@@ -7,12 +7,14 @@ import spawn from './lib/cross-spawn'
 import logger from './lib/logger'
 
 async function createApp(installPath: string): Promise<void> {
+  const absolutePath = path.resolve(__dirname, installPath)
+
   // Create project directory
   logger.default('')
   logger.white('Creating project folder...')
 
-  await mkdirp(installPath)
-  process.chdir(installPath)
+  await mkdirp(absolutePath)
+  process.chdir(absolutePath)
 
   // Create package.json
   logger.default('')
@@ -79,7 +81,7 @@ async function createApp(installPath: string): Promise<void> {
   logger.default('')
   logger.white('Copying config files from template...')
 
-  await cpy('**', installPath, {
+  await cpy('**', absolutePath, {
     parents: true,
     cwd: path.join(__dirname, 'templates'),
     rename: (name) => {
