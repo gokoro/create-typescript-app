@@ -7,7 +7,7 @@ import spawn from './lib/cross-spawn'
 import logger from './lib/logger'
 
 async function createApp(installPath: string): Promise<void> {
-  const absolutePath = path.resolve(__dirname, installPath)
+  const absolutePath = path.resolve(installPath)
 
   // Create project directory
   logger.default('')
