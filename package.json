@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "start": "ts-node index.ts",
-    "build": "ncc build index.ts -o dist --minify --no-cache",
+    "build": "ncc build index.ts -o dist --minify --no-cache --external templates/",
     "lint": "eslint . --ext .ts",
     "publish": "yarn build && yarn npm publish --access public --tolerate-republish"
   },
@@ -18,7 +18,7 @@
     "@types/node": "^16.7.1",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
-    "@vercel/ncc": "^0.29.2",
+    "@vercel/ncc": "^0.30.0",
     "chalk": "^4.1.2",
     "commander": "^8.1.0",
     "cpy": "^8.1.2",
