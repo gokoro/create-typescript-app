@@ -69,6 +69,12 @@ async function createApp(installPath: string): Promise<void> {
 
   spawn('yarn', 'dlx @yarnpkg/sdks vscode')
 
+  logger.default('')
+  logger.white('Setting up all available sdks...')
+  logger.default('')
+
+  spawn('yarn', 'dlx @yarnpkg/sdks')
+
   // Add plugins for yarn berry
   logger.default('')
   logger.white('Adding plugins for yarn berry...')
